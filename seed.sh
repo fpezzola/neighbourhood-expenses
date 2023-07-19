@@ -10,9 +10,12 @@ npx hardhat seed-neighbors --address $NEIGHBORS_CONTRACT_ADDRESS
 
 echo "Adding targets..."
 
-npx hardhat add-target --address $GOVERNANCE_CONTRACT_ADDRESS --target 0x413f3536eab14074e6b2a7813b22745E41368875 --description "Soccer, Tennis, Basketball and Gym management."
-npx hardhat add-target --address $GOVERNANCE_CONTRACT_ADDRESS --target 0x4Aa942D09A237f3Daf625cac547b91b3a84b9D41 --description "Grill and pool area management."               
-npx hardhat add-target --address $GOVERNANCE_CONTRACT_ADDRESS --target 0x4A3CD1E36091a66cf6dea0A77dAd564fFC8547a1 --description "Basic facilities and security management."
+##private-key c49ea32a1e026e36da42b025e9bf5fb5998ca00a1391837dc6ab14afd5bad3b7
+npx hardhat add-target --address $GOVERNANCE_CONTRACT_ADDRESS --target 0x85845508baf92573b9e8df51c349212285ea8f61 --description "Soccer, Tennis, Basketball and Gym management."
+#private-key b88728b60b164d4a2e6c415f4feafdcd4370e04b5582d04346c754018b3ec9d1
+npx hardhat add-target --address $GOVERNANCE_CONTRACT_ADDRESS --target 0xe20462b9c149cd17f6eeca8bfa5c479ed236228d --description "Grill and pool area management."               
+#private-key 0b280c282477ba9623027a3b225ef788ba628e78fcac781d7db97eff3c2ab866
+npx hardhat add-target --address $GOVERNANCE_CONTRACT_ADDRESS --target 0x2406f569bf23c11dc2d1240820b01a369c914c2f --description "Basic facilities and security management."
 
 echo "Governance targets added"
 
