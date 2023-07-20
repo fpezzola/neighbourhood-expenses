@@ -4,7 +4,7 @@
     Expenses, budget and neighbourhood management
   </strong>
   <p>
-    This is a Web3 project that supports gated community management.
+    This is a Web3 project that consists of a set of contracts and a dApp.
   </p>
 </div>
 
@@ -12,7 +12,7 @@
 
 Commonly, gated communities collect money through the expenses that are paid by the residents of the neighborhood. With the surplus money, infrastructure works and/or improvements in common spaces are carried out for the greater comfort of the residents.
 
-Neighbors will be in charge of creating and voting on proposals for the use of surplus money. This power and the weight of his vote, will be gained with the regular payment of the expenses of the neighborhood.
+Neighbors will be in charge of creating and voting on proposals for the use of surplus money. This power and the weight of his vote will be gained with the regular payment of the expenses of the neighborhood.
 
 Read the [Project Overview](/docs/overview.md) for a detailed explanation of this project.
 
