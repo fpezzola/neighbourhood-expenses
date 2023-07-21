@@ -39,13 +39,13 @@ export function AdminSidebar({ account }: { account: string }) {
 					Admin
 				</h1>
 			</Link>
-			<Item to="admin/expenses">
-				<FileTextIcon height={20} width={20} />
-				<span>Expenses</span>
-			</Item>
 			<Item to="admin/add">
 				<PlusIcon height={20} width={20} />
 				<span>Add neighbor</span>
+			</Item>
+			<Item to="admin/expenses">
+				<FileTextIcon height={20} width={20} />
+				<span>Expenses</span>
 			</Item>
 			<Item to="admin/settings">
 				<GearIcon height={20} width={20} />

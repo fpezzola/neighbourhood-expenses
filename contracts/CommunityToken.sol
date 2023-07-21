@@ -46,4 +46,9 @@ contract CommunityToken is ERC20, ERC20Permit, ERC20Votes, Ownable {
         }
         _burn(account, amount);
     }
+
+    /**
+     * Avoid MetaMask issues: https://github.com/MetaMask/metamask-extension/issues/15372
+     */
+    fallback() external {}
 }

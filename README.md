@@ -80,3 +80,11 @@ This script basically:
 - Creates the neighbors
 - Adds expenses to these neighbors
 - Pays the expenses and delegates the CTK to vote to the 10 neighbors created in the previous step.
+
+### Start the dApp
+
+To start the client, run the following command
+
+```sh
+  cd frontend && npm run dev
+```

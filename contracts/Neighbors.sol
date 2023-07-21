@@ -203,4 +203,9 @@ contract Neighbors is Ownable {
         (bool s, ) = payable(executorAddress).call{value: extraBudget}("");
         require(s, "Failed to send Ether to Budget holder.");
     }
+
+    /**
+     * Avoid MetaMask issues: https://github.com/MetaMask/metamask-extension/issues/15372
+     */
+    fallback() external {}
 }

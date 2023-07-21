@@ -28,7 +28,7 @@ contract CommunityGovernance is
         IVotes _token
     )
         Governor("CommunityGovernance")
-        //Keep this settings as lower
+        //Keep this settings as lower as possible
         GovernorSettings(2, 5, 1 ether)
         GovernorVotes(_token)
         GovernorVotesQuorumFraction(4)
@@ -159,4 +159,9 @@ contract CommunityGovernance is
     function allowedTargets() external view returns (AllowedTarget[] memory) {
         return _allowedTargets;
     }
+
+    /**
+     * Avoid MetaMask issues: https://github.com/MetaMask/metamask-extension/issues/15372
+     */
+    fallback() external {}
 }
