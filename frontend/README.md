@@ -32,7 +32,6 @@ Run the following command to install dependencies:
 
 Create a `.env` file in the root of the project, you can use the `.env.default` as reference. The required ENV variables are:
 
-- `LITEFS_DIR`: ...
 - `SESSION_SECRET`: session secret for storing the theme.
 - `COMMUNITY_TOKEN_CONTRACT_ADDRESS`: community token contract address.
 - `GOVERNOR_CONTRACT_ADDRESS`: governor contract address.

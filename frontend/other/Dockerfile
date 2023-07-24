@@ -38,7 +38,6 @@ RUN npm run build
 FROM base
 
 ENV FLY="true"
-ENV LITEFS_DIR="/litefs/data"
 ENV COMMUNITY_TOKEN_CONTRACT_ADDRESS=""
 ENV GOVERNOR_CONTRACT_ADDRESS=""
 ENV NEIGHBORS_CONTRACT_ADDRESS=""
@@ -59,11 +58,5 @@ COPY --from=build /myapp/build /myapp/build
 COPY --from=build /myapp/public /myapp/public
 COPY --from=build /myapp/package.json /myapp/package.json
 
-# prepare for litefs
-COPY --from=flyio/litefs:0.4.0 /usr/local/bin/litefs /usr/local/bin/litefs
-ADD other/litefs.yml /etc/litefs.yml
-RUN mkdir -p /data ${LITEFS_DIR}
 
 ADD . .
-
-CMD ["litefs", "mount"]

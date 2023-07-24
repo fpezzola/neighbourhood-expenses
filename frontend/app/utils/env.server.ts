@@ -2,7 +2,6 @@ import invariant from 'tiny-invariant'
 
 const requiredServerEnvs = [
 	'NODE_ENV',
-	'LITEFS_DIR',
 	'SESSION_SECRET',
 	'COMMUNITY_TOKEN_CONTRACT_ADDRESS',
 	'GOVERNOR_CONTRACT_ADDRESS',
